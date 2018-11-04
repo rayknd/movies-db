@@ -3,21 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
+import { PopularidadePage } from '../pages/popularidade/popularidade';
+import { LancamentoPage } from '../pages/lancamento/lancamento';
+import { GeneroPage } from '../pages/genero/genero';
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { CadastrarFilmePage } from '../pages/cadastrar-filme/cadastrar-filme';
+import { FilmesPage } from '../pages/filmes/filmes';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    PopularidadePage,
+    LancamentoPage,
+    GeneroPage,
+    TabsPage,
+    CadastrarFilmePage,
+    FilmesPage
+
   ],
   imports: [
     BrowserModule,
@@ -26,10 +31,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    PopularidadePage,
+    LancamentoPage,
+    GeneroPage,
+    TabsPage,
+    CadastrarFilmePage,
+    FilmesPage
   ],
   providers: [
     StatusBar,
